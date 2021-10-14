@@ -77,7 +77,7 @@ class RodOnAnts {
         });
     }
     fallAnt() {
-        this.ants = this.ants.filter(ant => ant.position > 0 && ant.position < 99);
+        this.ants = this.ants.filter(ant => ant.position > 0 && ant.position < this.rod.length);
     }
     clash() {
         const switchedIds = [];
